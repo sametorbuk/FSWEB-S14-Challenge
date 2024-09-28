@@ -17,7 +17,7 @@ public class Main {
 
         hamburger.addHamburgerAddition3("Cheese", 1.13);
 
-        hamburger.itemizeHamburger();
+        System.out.println(hamburger.itemizeHamburger());
 
         HealthyBurger healthyBurger = new HealthyBurger("Vegan Burger", 5.67, "Sandwich");
 
@@ -25,12 +25,12 @@ public class Main {
 
         healthyBurger.addHealthyAddition1("Lentils", 3.41);
 
-        healthyBurger.itemizeHamburger();
+        System.out.println(healthyBurger.itemizeHamburger());
 
-        DeluxeBurger db = new DeluxeBurger("Deluxeee" , "Beef" , "Sandwich");
+        DeluxeBurger db = new DeluxeBurger();
 
         db.addHamburgerAddition3("Should not do this", 50.53);
 
-        db.itemizeHamburger();
+        System.out.println(db.itemizeHamburger());
     }
 }

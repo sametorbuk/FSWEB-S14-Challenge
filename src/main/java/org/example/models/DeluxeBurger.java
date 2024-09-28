@@ -5,9 +5,10 @@ public class DeluxeBurger extends Hamburger {
     private String drink;
 
     public DeluxeBurger() {
+        super.setPrice(19.1);
         this.cips = "CURVY";
         this.drink = "COKE";
-        super.setPrice(19.1);
+
     }
 
     public String getCips() {

@@ -73,10 +73,12 @@ public class Hamburger {
 
 
     public void setName(String name) {
+
         this.name = name;
     }
 
     public void setMeat(String meat) {
+
         this.meat = meat;
     }
 
