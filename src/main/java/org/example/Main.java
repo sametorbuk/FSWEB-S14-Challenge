@@ -27,7 +27,7 @@ public class Main {
 
         healthyBurger.itemizeHamburger();
 
-        DeluxeBurger db = new DeluxeBurger();
+        DeluxeBurger db = new DeluxeBurger("Deluxeee" , "Beef" , "Sandwich");
 
         db.addHamburgerAddition3("Should not do this", 50.53);
 

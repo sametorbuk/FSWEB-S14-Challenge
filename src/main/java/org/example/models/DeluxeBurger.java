@@ -5,9 +5,10 @@ public class DeluxeBurger extends Hamburger {
     private String drink;
 
     public DeluxeBurger() {
-
+        this.cips = "CURVY";
+        this.drink = "COKE";
+        super.setPrice(19.1);
     }
-
 
     public String getCips() {
         return cips;
@@ -18,10 +19,10 @@ public class DeluxeBurger extends Hamburger {
     }
     
 
-    public DeluxeBurger(String name, String meat, double price, String breadRollType) {
-        super(name, meat, price, breadRollType);
-        this.cips = cips;
-        this.drink = drink;
+    public DeluxeBurger(String name, String meat,  String breadRollType) {
+        super(name, meat, 0.0, breadRollType);
+        this.cips = "CURVY";
+        this.drink = "COKE";
     }
 
     @Override
@@ -48,10 +49,8 @@ public class DeluxeBurger extends Hamburger {
 
     @Override
     public String itemizeHamburger() {
-        double price = getPrice() ;
-        return "Name : " + getName() + " " + "Meat:" + getMeat() +
-                "BreadRollType:" + getBreadRollType() + " " +
-                "Price:" + " " + price;
+        double price = getPrice();
+        return "Name: " + getName() + " Meat: " + getMeat() + " BreadRollType: " + getBreadRollType() + " Price: " + price;
     }
 
 

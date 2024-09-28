@@ -31,8 +31,9 @@ public class Hamburger {
     private double addition5Price;
 
     public Hamburger() {
-
+        this.price=13;
     }
+
 
 
     public void addHamburgerAddition1(String addition1Name , double addition1Price){
@@ -62,7 +63,7 @@ public class Hamburger {
                 "BreadRollType:" + breadRollType + "" + "Addition:1" + addition1Name
                 + "Addition:2" + addition2Name +
                 "Addition:3" + addition3Name +
-                "Addition:4" + addition4Name + "Price:" + " " + price;
+                 "Price:" + " " + price;
 
     }
 

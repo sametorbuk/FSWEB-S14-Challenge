@@ -16,14 +16,12 @@ public class HealthyBurger extends Hamburger {
     private String healthyExtra4Name;
     private double healthyExtra4Price;
 
-
+   public HealthyBurger(){
+       setPrice(getPrice() + healthyExtra1Price + healthyExtra2Price);
+   }
 
     public HealthyBurger(String name, double price, String breadRollType) {
-        super();
-        setName(name);
-        setBreadRollType(breadRollType);
-        setPrice(price);
-        setMeat("tofu");
+        super(name, "Tofu", price, breadRollType);
     }
 
 
@@ -46,6 +44,6 @@ public class HealthyBurger extends Hamburger {
                 "BreadRollType:" + getBreadRollType() + " " + "Addition:1" + healthyExtra1Name
                 + "Addition:2" + healthyExtra2Name +
 
-                "Price:" + " " + price;
+                "Price:" + " " + getPrice();
     }
 }
