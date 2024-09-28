@@ -17,7 +17,7 @@ public class HealthyBurger extends Hamburger {
     private double healthyExtra4Price;
 
    public HealthyBurger(){
-       setPrice(getPrice() + healthyExtra1Price + healthyExtra2Price);
+
    }
 
     public HealthyBurger(String name, double price, String breadRollType) {
@@ -28,12 +28,14 @@ public class HealthyBurger extends Hamburger {
     public void addHealthyAddition1(String ingredient , double price){
         this.healthyExtra1Name=ingredient;
         this.healthyExtra1Price=price;
+        setPrice(getPrice()+price);
     }
 
     public void addHealthyAddition2(String ingredient , double price){
 
         this.healthyExtra2Name=ingredient;
         this.healthyExtra2Price=price;
+        setPrice(getPrice()+price);
     }
 
 
